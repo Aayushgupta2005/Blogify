@@ -48,7 +48,7 @@ function Header() {
               </li>
             )}
           </ul>
-          <ul className={`md:hidden ${menuOpen ? 'block' : 'hidden'} absolute top-14 left-0 w-full bg-gray-900 p-4 space-y-4 z-10`}>
+          <ul className={`md:hidden ${menuOpen ? 'block' : 'hidden'} absolute top-14 left-0 w-full bg-gray-900 p-4 space-y-4 z-50 flex-col items-center justify-center`}>
             {navItems.map((item) => item.active && (
               <li key={item.name}>
                 <button
