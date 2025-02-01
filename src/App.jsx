@@ -9,7 +9,6 @@ import { Outlet } from 'react-router-dom'
 function App() {
   const [loading, setLoading] = useState(true)
   const dispatch = useDispatch()
-
   useEffect(() => {
     authService.getCurrentUser()
     .then((userData) => {
@@ -21,7 +20,6 @@ function App() {
     })
     .finally(() => setLoading(false))
   }, [])
-  
   return !loading ? (
     <div className='min-h-screen flex flex-wrap content-between bg-gradient-to-b from-gray-100 to-gray-200'>
       <div className='w-full block'>
